@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@500;700;900&display=swap");
+@import "./reset";
+@import "./vars";
+@import "./mixins";
+
+body {
+  font-family: $ff-text;
+  font-size: 16px;
+  background-color: $clr-white;
+}
+
+.page {
+  padding-top: 8.438rem;
+  padding-bottom: 2.5rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  z-index: $z-page;
+  overflow: hidden;
+}
+
+.main {
+  padding-bottom: 6rem;
+  display: grid;
+  gap: 6.938rem;
+}
+
+.container {
+  margin-inline: auto;
+  padding: 0 1.5rem;
+  max-width: calc(1110px + 2rem);
+}
+
+.product {
+  display: grid;
+  gap: 1.5rem;
+}
+
+@media (min-width: 48rem) {
+  .page {
+    padding-top: 10rem;
+    padding-bottom: 2.688rem;
+  }
+
+  .main {
+    padding-bottom: 8.875rem;
+    gap: 8.875rem;
+  }
+
+  .container {
+    padding: 0 2.5rem;
+    max-width: calc(1110px + 5rem);
+  }
+}
+
+@media (min-width: 60rem) {
+  .page {
+    padding-top: 12.25rem;
+    padding-bottom: 2.438rem;
+  }
+  .main {
+    padding-bottom: 8rem;
+    gap: 10.5rem;
+  }
+
+  .product {
+    gap: 1.875rem;
+  }
+}
+
+@import "./header";
+@import "./intro";
+@import "./info";
+@import "./features";
+@import "./footer";

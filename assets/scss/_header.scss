@@ -1,0 +1,53 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: $z-header;
+  width: 100%;
+
+  &__inner {
+    padding-top: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__button {
+    @include button;
+    color: $clr-primary;
+    background-color: $clr-gray;
+  }
+}
+
+@media (max-width: 18rem) {
+  .header {
+    &__inner {
+      flex-direction: column;
+      gap: 1rem;
+    }
+  }
+}
+
+@media (min-width: 48rem) {
+  .header {
+    &__inner {
+      padding-top: 2.5rem;
+    }
+  }
+}
+
+@media (min-width: 60rem) {
+  .header {
+    &__inner {
+      padding-top: 3.438rem;
+    }
+
+    &__button {
+      transition: color 0.2s linear, background-color 0.2s linear;
+      &:hover {
+        background-color: $clr-primary;
+        color: $clr-white;
+      }
+    }
+  }
+}

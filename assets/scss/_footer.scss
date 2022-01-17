@@ -1,0 +1,16 @@
+.footer {
+  margin-top: auto;
+
+  &__inner {
+    text-align: center;
+  }
+
+  &__text {
+    @include text-2;
+    color: $clr-secondary;
+
+    &--bold {
+      font-weight: 700;
+    }
+  }
+}

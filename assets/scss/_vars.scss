@@ -1,0 +1,41 @@
+:root {
+  --fs-900: 3rem;
+  --fs-800: 2rem;
+  --fs-700: 1.5rem;
+  --fs-600: 1rem;
+  --fz-500: 1rem;
+  --fs-button: 1rem;
+}
+
+@media (min-width: 60rem) {
+  :root {
+    --fs-900: 3.5rem;
+    --fs-600: 1.125rem;
+  }
+}
+
+// Color
+$clr-orange: hsla(22, 89%, 52%, 1);
+$clr-orange-active: hsla(22, 100%, 69%, 1);
+$clr-gray: hsla(198, 28%, 93%, 1);
+$clr-primary: hsla(220, 50%, 17%, 1);
+$clr-secondary: hsla(221, 23%, 58%, 1);
+$clr-white: hsla(0, 0%, 100%, 1);
+
+// Font family
+$ff-heading: "Barlow", sans-serif;
+$ff-text: "Barlow", sans-serif;
+$ff-button: "Barlow", sans-serif;
+
+// Font size
+$fs-900: var(--fs-900);
+$fs-800: var(--fs-800);
+$fs-700: var(--fs-700);
+$fs-600: var(--fs-600);
+$fs-500: var(--fs-500);
+$fs-button: var(--fs-button);
+
+// Other
+$z-page: 1;
+$z-header: 99999;
+$border-image: 1.25rem;
